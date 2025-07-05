@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pratik Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/Projects.css">
+<script src="https://kit.fontawesome.com/eef9429925.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+<!-- ________________________Nav_Section__________________________________ -->
+
+<nav class="navbar navbar-expand-lg fixed-top fbar">
+
+  <div class="container-fluid">
+
+    <a class="navbar-brand" href="index.html">Pratik Bhuwad</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      
+      <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pratik Bhuwad</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-name nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="About.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="Projects.html">Projects</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" href="pratikbhuwad192k4@gmail.com"><i class="fa-solid fa-envelope fa-lg" ></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="https://github.com/Pratik1Bhuwad"><i class="fa-brands fa-github fa-lg" ></i></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="https://www.linkedin.com/in/pratik-bhuwad-a62576293"><i class="fa-brands fa-linkedin fa-lg" "></i></i></a>
+          </li>
+
+
+    
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="projects-section py-5">
+  <div class="container" >
+    <h2 class="mb-2">My All Projects</h2>
+    <p class="mb-4 section-subtitle">
+    A collection of projects showcasing my work in Data Analytics ,
+     Data Science ,machine learning and AI and web development.
+  </p>
+    <div class="projects row justify-content-center g-4" >
+      <!-- Project 1 -->
+      <div class="col-12 col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="200">
+        <div class="pcard card h-100">
+          <img src="images/taxi_images.png" class="card-img-top" alt="Project 1">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Maximizing Revenue for Taxi Drivers</h5>
+            <p class="card-text">This project uses hypothesis testing on NYC Taxi trip data to
+         analyze the impact of payment methods (cash vs. card) on fare amounts.
+          Results show card payments are linked to higher revenue.</p>
+          <div class="tag-group">
+        <span>Python</span><span>Pandas</span><span>Statistics</span>
+        <span>Hypothesis Testing</span><span>Data Analysis</span><span>Jupyter Notebook</span>
+      </div>
+            <div class="mt-auto">
+              <a href="https://github.com/Pratik1Bhuwad/taxi-revenue-analysis.git" class="pbuttons1 btn btn-sm me-2">GitHub</a>
+              <a href="https://docs.google.com/presentation/d/1Dx1wEy2jbCC8gHL0geaw2-lS5qLQvt7B/edit?usp=sharing&ouid=102382394201752496331&rtpof=true&sd=true" class="pbuttons2 btn btn-sm ">View PPT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- Project: Ad Campaign Performance Analysis -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="500">
+  <div class="pcard card h-100">
+    <img src="images/Facebook vs AdWords.jpg" class="facebook_vs_adWords card-img-top" alt="Ad Campaign Performance">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Ad Campaign Performance Analysis</h5>
+      <p class="card-text">
+        A statistical and time series analysis of Facebook vs Google AdWords campaigns using A/B testing, regression, and trend analysis to evaluate conversion efficiency and cost-effectiveness.
+      </p>
+      <div class="tag-group">
+        <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>scipy</span>
+        <span>A/B Testing</span><span>Hypothesis Testing</span><span>Time Series Analysis</span><span>Jupyter Notebook</span>
+        
+      </div>
+      <div class="mt-auto">
+        <a href="https://github.com/Pratik1Bhuwad/marketing-campaign-performance-analysis.git" class="pbuttons1 btn btn-sm me-2">GitHub</a>
+        <!-- <a href="https://drive.google.com/your-ppt-or-doc-link" class="pbuttons2 btn btn-sm">View Report</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- Project: Unemployment Analysis Dashboard -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="300">
+  <div class="pcard card h-100">
+    <img src="images/unemployment_dashboard.jpg" class="unemployment_dashboard_img card-img-top" alt="Unemployment Dashboard">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Unemployment Analysis Dashboard</h5>
+      <p class="card-text">
+        A Power BI dashboard analyzing unemployment trends by age and gender using interactive visuals like pie charts, line graphs, and filters. Key insights include the most and least affected age groups from 2012–2015.
+      </p>
+      <div class="tag-group">
+        <span>Power BI</span><span>DAX</span><span>Data Visualization</span>
+        <span>Dashboard</span><span>Business Intelligence</span>
+      </div>
+      <div class="mt-auto">
+        <a href="https://github.com/Pratik1Bhuwad/Unemployment-Analysis-Dashboard-Power-BI-Project.git" class="pbuttons1 btn btn-sm me-2">GitHub</a>
+        <!-- <a href="https://drive.google.com/your-ppt-link" class="pbuttons2 btn btn-sm">View PPT</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Project: Electronic Sales Dashboard -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="400">
+  <div class="pcard card h-100">
+    <img src="images/sales_dashboard.jpg" class="sales_dashboard_img card-img-top" alt="Electronic Sales Dashboard">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Electronic Sales Dashboard</h5>
+      <p class="card-text">
+        An interactive Excel dashboard visualizing electronic product sales by type, time, age group, and order status. 
+        It features dynamic charts for year-over-year sales comparison, product performance, and customer insights.
+      </p>
+      <div class="tag-group">
+        <span>Excel</span><span>Dashboard</span><span>Data Analysis</span>
+        <span>Pivot Charts</span><span>Interactive Filters</span>
+      </div>
+      <div class="mt-auto">
+        <a href="https://github.com/Pratik1Bhuwad/Electronic-Sales-Excel-Analysis-Project.git" class="pbuttons1 btn btn-sm me-2">GitHub</a>
+        <!-- <a href="https://drive.google.com/your-ppt-or-excel-file-link" class="pbuttons2 btn btn-sm">View File</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Project: Portfolio Website -->
+<div class="col-12 col-md-6 col-lg-4" data-aos="fade-left" data-aos-delay="450">
+  <div class="pcard card h-100">
+    <img src="images/portfolio_preview.jpg" class="card-img-top" alt="Portfolio Website Screenshot">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">Personal Portfolio Website</h5>
+      <p class="card-text">
+        A responsive and interactive portfolio website designed using HTML, CSS, JavaScript, and Bootstrap. 
+        It showcases projects, skills, and certifications with smooth animations, mobile responsiveness, and engaging design.
+      </p>
+      <div class="tag-group">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>Bootstrap</span><span>Responsive Design</span><span>AOS.js</span>
+      </div>
+      <div class="mt-auto">
+        <a href="https://github.com/Pratik1Bhuwad/Portfolio-Website.git" class="pbuttons1 btn btn-sm me-2">GitHub</a>
+        <a href="index.html" class="pbuttons2 btn btn-sm">Live Demo</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+      
+
+      
+    </div>
+   
+  </div>
+</section>
+
+
+
+
+
+
+<!-- _______________________Contact_Section________________________________ -->
+
+<section class="contact" id="contact">
+  <div class="container">
+    
+  <div class="row text-center text-md-start">
+    <!-- Portfolio Column -->
+    <div class="col-md-4 mb-4">
+      <h5>Portfolio</h5>
+      <p class="mt-3">© 2025 Pratik Bhuwad.</p>
+    </div>
+
+    <!-- Quick Links Column -->
+    <div class="col-md-4 mb-4">
+      <h5>Quick Links</h5>
+      <a href="index.html" class="contact-link mt-3 d-block">Home</a>
+      <a href="About.html" class="contact-link">About</a>
+      <a href="Projects.html" class="contact-link">Projects</a>
+    </div>
+
+    <!-- Connect Column -->
+    <div class="col-md-4 mb-4">
+      <h5>Connect</h5>
+      <div class="mt-3">
+        <p><a class="nav-link active" href="mailto:pratikbhuwad192k4@gmail.com"><i class="fa-solid fa-envelope fa-lg" ></i>  pratikbhuwad192k4@gmail.com</a></p>
+        <p><i class="fas fa-phone-alt contact-icon"></i> +91 771081037 </p>
+      </div>
+      <div class="contact-icons mt-2">
+        <a href="https://github.com/Pratik1Bhuwad" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/pratik-bhuwad-a62576293" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/BhuwadPatu44909" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <!-- <a href="https://t.me/@PratikBhuwad01" target="_blank"><i class="fab fa-telegram"></i></a> -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="Js/script.js"></script> -->
+</body>
+</html>

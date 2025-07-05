@@ -1,0 +1,641 @@
+body {
+    background-color: #CFD8DC; /* Cool gray as background */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------------------------------Navbar----------------------------------------- */
+.navbar {
+    background-color: #1A237E; /* Navy blue */
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #00ACC1 !important;
+}
+
+/* Navbar link styles */
+.navbar .nav-link {
+    color: white !important;
+    transition: color 0.3s ease, transform 0.3s ease;
+    margin: 0 17px; /* Increase horizontal gap between items */
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+    color: #00ACC1 !important; /* Teal on hover */
+    transform: scale(1.1);    /* Grows slightly on hover */
+}
+
+.navbar .nav-link i {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover i {
+    color: #00ACC1 !important;
+}
+
+/* Offcanvas background and text color */
+.offcanvas {
+    background-color: #1a237e; /* Navy blue */
+    color: white;
+}
+
+/* Offcanvas links white by default */
+.offcanvas .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for offcanvas links */
+.offcanvas .nav-link:hover {
+    color: #00ACC1 !important; /* Teal on hover */
+}
+
+/* Optional: White close button */
+.offcanvas .btn-close {
+    filter: invert(1);
+}
+
+/* Make the navbar toggler (hamburger) icon white */
+.navbar-toggler {
+    border-color: white; /* White border */
+}
+
+/* The default Bootstrap hamburger icon is an SVG background */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.fbar {
+    position: sticky;
+    top: 0;
+    border-bottom: 2px solid #00ACC1; /* Teal accent border */
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+/* -----------------------------------About Page Additions----------------- */
+.about-profile {
+    background-color: #CFD8DC;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px; /* Adjust for fixed navbar */
+}
+
+.about-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00ACC1;
+    padding: 4px;
+}
+
+.about-text h1 {
+    font-size: 2.2rem;
+    color: #1A237E;
+    margin: 0;
+}
+
+.about-text h4 {
+    color: #00ACC1;
+    margin: 10px 0;
+}
+
+.badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #1A237E;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+/* -----------------------------Summary----------------------- */
+.summary-box {
+    background-color: white;
+    border: 1px solid #00ACC1;
+    padding: 25px 30px;
+    border-radius: 10px;
+    color: #333;
+    margin-bottom: auto;
+}
+
+.summary-box h5 {
+    color: #1A237E;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* ------------------------------Skills Section-----------------*/
+.skills {
+    background-color: #CFD8DC;
+    
+    
+}
+
+.skills h4 {
+    color: #1A237E;
+    margin-bottom: 30px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: white;
+    border: 1px solid #00ACC1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.skill-box h6 {
+    color: #00ACC1;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tags span {
+    background-color: #1A237E;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.75rem;
+}
+
+/* ------------------------------------------------ Experience Section --------------------------------------- */
+.experience {
+    background-color: #CFD8DC; /* Cool gray */
+    
+}
+
+.experience h4 {
+    color: #1A237E; /* Navy blue */
+    margin-bottom: 40px;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #00ACC1; /* Teal border */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.job-header h5 {
+    margin: 0;
+    color: #1A237E; /* Navy blue */
+    font-weight: bold;
+    flex-basis: 100%; /* Take full width on small screens */
+}
+
+.job-header span {
+    color: #555;
+    font-size: 0.9rem;
+    flex-basis: 100%; /* Take full width on small screens */
+    text-align: right; /* Align date to right on smaller screens */
+}
+
+.job-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.job-card li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.job-tags {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.job-tags span {
+    display: inline-block;
+    background-color: #1A237E;
+    color: white;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.container {
+    max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* ------------------------Certification Cards-------------- */
+.certifications {
+    background-color: #CFD8DC;
+    
+}
+
+.certifications h4 {
+    color: #1A237E;
+    margin-bottom: 30px;
+}
+
+.certifications h6 {
+    color: #1A237E;
+}
+
+.cert-grid {
+    display: grid; /* Use grid for more control */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 20px;
+}
+
+.cert-card {
+    background: white;
+    border: 2px solid #00ACC1;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/*-------------------------- Education---------------------- */
+.education {
+    background-color: #CFD8DC;
+    
+}
+
+.education h4 {
+    color: #1A237E;
+    margin-bottom: 30px;
+}
+
+.education h5 {
+    color: #1A237E;
+}
+
+.edu-card {
+    background: white;
+    border: 2px solid #00ACC1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.gpa {
+    font-weight: bold;
+    color: #00ACC1;
+    margin-top: 5px; /* Add some space if it wraps */
+}
+
+.honors span {
+    display: inline-block;
+    background: #1A237E;
+    color: white;
+    border-radius: 12px;
+    padding: 4px 10px;
+    margin: 5px 6px 0 0;
+    font-size: 0.75rem;
+}
+
+.activities {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* -----------------------Hobbies------------------------- */
+.hobbies-section {
+  padding: 3rem 1rem;
+  background-color: #CFD8DC; /* Cool Gray background */
+}
+
+.hobby-container {
+  background-color: #ffffff; /* white card container */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e0e0e0;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1A237E; /* Navy Blue */
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hobby-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 172, 193, 0.1); /* Teal accent shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 172, 193, 0.25); /* Teal hover glow */
+}
+
+.hobby-icon {
+  font-size: 1.1rem;
+  color: #1A237E; /* Navy Blue text */
+  background-color: #CFD8DC; /* Cool Gray pill */
+  padding: 6px 12px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+
+/* --- Media Queries for Responsiveness --- */
+/* Ensure hobby cards adapt correctly with the new structure */
+@media (max-width: 600px) {
+    .hobby-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+    .hobby-card {
+        padding: 15px; /* Slightly less padding on small screens */
+    }
+    .hobby-icon-title {
+        padding: 6px 12px;
+        margin-bottom: 10px;
+    }
+    .hobby-icon-title h6 {
+        font-size: 0.95rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .hobby-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Possibly 2 columns */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .hobby-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for these sections */
+    }
+}
+
+@media (min-width: 993px) {
+    .hobby-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+}
+
+
+
+
+
+
+
+/* --- Media Queries for Responsiveness --- */
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+    .about-profile, .skills, .experience, .certifications, .education, .hobbies, .contact .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-text h4 {
+        font-size: 1rem;
+    }
+
+    .badges {
+        justify-content: center;
+    }
+
+    .summary-box {
+        padding: 20px;
+    }
+
+    .skill-grid, .cert-grid, .hobby-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+    }
+
+    .cert-card, .hobby-card {
+        width: 100%; /* Full width */
+    }
+
+    .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .job-header span {
+        text-align: left; /* Align date to left on mobile */
+        margin-top: 5px;
+    }
+
+    .contact .col-md-4 {
+        text-align: center !important; /* Center text for contact columns on mobile */
+    }
+
+    .contact-icons {
+        justify-content: center;
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .contact-link {
+        display: inline-block; /* Make quick links inline-block to prevent full-width clicks */
+        margin: 5px 10px; /* Adjust margin for inline links */
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 601px to 768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+    .about-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .badges {
+        justify-content: center;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .cert-grid, .hobby-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .cert-card, .hobby-card {
+        width: auto; /* Allow auto-sizing within grid */
+    }
+
+    .job-header {
+        flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    .job-header h5 {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+
+    .job-header span {
+        flex-basis: 100%;
+        text-align: right;
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .cert-grid, .hobby-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for these sections */
+    }
+
+    .cert-card, .hobby-card {
+        width: auto;
+    }
+}
+
+/* Large devices (desktops, 993px and up) - Current styles are largely for this */
+@media (min-width: 993px) {
+    .skill-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .cert-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for certifications */
+    }
+
+    .hobby-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* More columns for hobbies */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Contact_Section---------------------------- */
+.contact {
+  color: #ffffff;
+  background-color: #1A237E; /* Navy blue */
+  padding: 20px 0 5px 0;
+  
+}
+
+
+
+
+.contact-icon {
+  color: white;
+  font-size: 1.2rem; /* or adjust size as needed */
+}
+
+
+.contact-link {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+
+
+.contact h5 {
+  color: white; /* "Quick Links" and "Connect" headings */
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
+.contact-icons a {
+  color: white;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.contact-icons a:hover {
+  color: #ddd; /* Optional lighter shade on hover */
+}
+

@@ -1,0 +1,269 @@
+body {
+  background-color: #CFD8DC; /* Cool gray as background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------------------------------Navbar----------------------------------------- */
+.navbar {
+  background-color: #1A237E; /* Navy blue */
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  
+}
+
+.navbar-brand:hover {
+  color: #00ACC1 !important;
+}
+
+/* Navbar link styles */
+.navbar .nav-link {
+  color: white !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin: 0 17px; /* Increase horizontal gap between items */
+}
+
+/* Hover effect */
+.navbar .nav-link:hover {
+  color: #00ACC1 !important; /* Teal on hover */
+  transform: scale(1.1);     /* Grows slightly on hover */
+}
+
+
+.navbar .nav-link i {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover i {
+  color: #00ACC1 !important;
+}
+
+
+/* -------------------------------------------_________________------------------------------------------------- */
+
+
+
+/* Offcanvas background and text color */
+.offcanvas {
+  background-color: #1a237e; /* Navy blue */
+  color: white;
+}
+
+/* Offcanvas links white by default */
+.offcanvas .nav-link {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for offcanvas links */
+.offcanvas .nav-link:hover {
+  color: #00ACC1 !important; /* Teal on hover */
+}
+
+/* Optional: White close button */
+.offcanvas .btn-close {
+  filter: invert(1);
+}
+
+
+/* -------------------------------------------_________________------------------------------------------------- */
+
+
+
+/* Make the navbar toggler (hamburger) icon white */
+.navbar-toggler {
+  border-color: white; /* White border */
+}
+
+/* The default Bootstrap hamburger icon is an SVG background */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+.fbar {
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid #00ACC1; /* Teal accent border */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------projects section----------------------- */
+
+
+.projects-section h2{
+  color: #1A237E;;
+}
+
+.projects-section h5{
+  color: #1A237E;;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.pbuttons1{
+ 
+  border: 1.5px solid #00ACC1;
+  background-color: #00ACC1;
+  border-radius: 8px;
+  color: #ffffff;
+
+}
+
+.pbuttons2{
+  
+  border: 1.5px solid #00ACC1;
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: #000000;
+
+}
+
+.pbuttons1:hover {
+  background-color: #00ACC1 !important;
+  color: #ffffff;
+
+}
+
+.pbuttons2:hover {
+  background-color: #00ACC1 !important; 
+  color: #ffffff;
+}
+
+.pcard {
+  background-color: white;
+  border: 1px solid #00ACC1; /* Accent border */
+}
+
+
+/* Tags */
+.tag-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tag-group span {
+  background-color: #1A237E;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  white-space: nowrap; /* Prevent tags from breaking in half */
+}
+/* ---------------------------------------------------------------------------------- */
+
+.sales_dashboard_img {
+  height: 170px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.unemployment_dashboard_img{
+  height: 170px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.facebook_vs_adWords{
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------Contact_Section---------------------------- */
+.contact {
+  color: #ffffff;
+  background-color: #1A237E; /* Navy blue */
+  padding: 20px 0 5px 0;
+  
+}
+
+
+
+
+.contact-icon {
+  color: white;
+  font-size: 1.2rem; /* or adjust size as needed */
+}
+
+
+.contact-link {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-icons a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+}
+
+
+
+.contact h5 {
+  color: white; /* "Quick Links" and "Connect" headings */
+}
+
+.contact-link {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+
+.contact-icons a {
+  color: white;
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.contact-icons a:hover {
+  color: #ddd; /* Optional lighter shade on hover */
+}
